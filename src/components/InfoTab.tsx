@@ -28,7 +28,7 @@ export const InfoTab = React.memo(function InfoTab(
 					<Text fontWeight='500' fontSize='15px'>
 						Date Connected:
 					</Text>
-					<Text>{date_created}</Text>
+					<Text>{date_created.toString().slice(0, 10)}</Text>
 				</Box>
 			</Stack>
 		</TabPanel>

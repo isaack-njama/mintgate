@@ -17,7 +17,15 @@ export type ButtonProps = {
 
 export const Button = (props: ButtonProps) => {
 	return (
-		<CustomButton backgroundColor='black' color='white' {...props}>
+		<CustomButton
+			backgroundColor='black'
+			color='white'
+			_hover={{
+				background: 'gray',
+				color: 'white',
+			}}
+			{...props}
+		>
 			{props.children}
 		</CustomButton>
 	);
